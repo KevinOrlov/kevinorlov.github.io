@@ -15,7 +15,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top d-block d-sm-none">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Kevin Orlov</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,25 +44,30 @@
     </nav>
 
     <!-- Contact Info Section --> 
-    <div class="container mt-3">
-      <div class="row">
-        <!-- Added the profile picture and made it auto scale to the grid -->
-		<div class="col-2">
-          <img src="media/images/portrait.jpg" alt="Portrait" class="img-fluid" style=" width: auto; height: auto;">
-        </div>  
-        <div class="col-10">
-          <h3>Aspiring IT Specialist | Business-Aware Problem Solver</h3>
-          <h3>kevinorlov98@gmail.com | 087 457 5415 | <a href="https://www.linkedin.com/in/kevorlov">My LinkedIn</a></h3>
-          <h3>Dublin 11, Ireland</h3>
+    <!-- Added the profile picture and made it auto scale to the grid -->
+    <div class="row d-flex justify-content-between">
+      <div class="col-12 col-sm-12 col-md-3 d-flex justify-content-center">
+        <div class="card" style="width:200px">
+        <div class="card-img-container" style="display: flex; justify-content: center; align-items: center;">
+          <img class="card-img-top" src="media/images/portrait.jpg" alt="Card image" style="width: 80%; height: auto;">
         </div>
-    
-	</div>
-
+        <div class="card-body">
+          <h4 class="card-title">Kevin Orlov</h4>
+          <p class="card-text">Aspiring IT Specialist, Business-Aware Problem Solver</p>
+          <p class="card-text">kevinorlov98@gmail.com 087 457 5415</p>
+          <a href="https://www.linkedin.com/in/kevorlov" class="btn btn-primary">My LinkedIn</a>
+        </div>
+      </div> 
+    </div>    
       <!-- Personal Profile Section -->
-      <h2 id="personalProfile">Personal Profile</h2>
-      <p>
-        Computer Science Graduate (Level 8, NCI) with a strong business background and a practical, problem-solving mindset. Currently certified in CompTIA Network+ and A+ and working on Security+. Proficient in Java, SQL, and Linux, with working knowledge of HTML, CSS, Bootstrap, and virtualization tools like VMware and PowerShell. Experienced across Windows, Linux, and macOS environments, with exposure to cloud platforms (AWS, Azure) and enterprise software (Microsoft Office certified, Kerridge, CDK, ELSA, SAGA). Fluent in English (Irish born) and Russian. Known for delivering results in both technical and client-facing roles, including warranty operations and self-employed transport services. Familiar with server deployment and management.
-      </p>
+      <div class="col-9">
+        <h2 id="personalProfile">Personal Profile</h2>
+        <p>
+          Computer Science Graduate (Level 8, NCI) with a strong business background and a practical, problem-solving mindset. Currently certified in CompTIA Network+ and A+ and working on Security+. Proficient in Java, SQL, and Linux, with working knowledge of HTML, CSS, Bootstrap, and virtualization tools like VMware and PowerShell. Experienced across Windows, Linux, and macOS environments, with exposure to cloud platforms (AWS, Azure) and enterprise software (Microsoft Office certified, Kerridge, CDK, ELSA, SAGA). Fluent in English (Irish born) and Russian. Known for delivering results in both technical and client-facing roles, including warranty operations and self-employed transport services. Familiar with server deployment and management.
+        </p>
+      </div>
+    </div>
+
 
       <div class="row">
         <!-- Education Section -->
@@ -103,7 +108,7 @@
           </dl>
         </div>
       	<!-- Skills Section -->
-		<div class="col-md-4">
+		    <div class="col-md-4">
           <h2 id="Skills">Skills</h2>
           <ul>
             <li><b>Programming & Scripting:</b> Java, HTML, CSS, Batch scripting</li>
@@ -114,7 +119,7 @@
             <li><b>Hardware:</b> PC assembly, troubleshooting, BIOS configuration</li>
             <li><b>Software Tools:</b> MS Office, remote access utilities</li>
           </ul>
-        </div>
+          </div>
       </div>
 
       <!-- Projects Section -->
