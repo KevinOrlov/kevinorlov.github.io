@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Number Guess Array</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="main">
+		<h1>My Week 10 - Question 3</h1>
+		<h2>Number Guess Array (Math.Random)</h2>
+		<p>Guess a number between 1 and 10. The app will show how many times it appears in 5 random numbers.</p>
+
+		<label for="guessInput">Enter your number:</label>
+		<input type="number" class="guess" id="guessInput">
+		<button class="guess" id="guessButton">Go</button>
+
+		<!-- Return count and numbers in array using spans -->
+		<div>
+			<p>The numbers were: <span id="numbers"></span></p>
+			<p>Your guess appeared <span id="count"></span> time(s).</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
